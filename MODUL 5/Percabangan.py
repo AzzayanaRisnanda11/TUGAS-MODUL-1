@@ -1,20 +1,29 @@
-#prcabangan bersarang - Nested IF
-
-# kalkulator sederhana
-print(20*"=")
-print("kalkulator sederhana")
-print(20*"=")
-
-angka_1 = float(input("masukkan angka ke-1 = "))
-operator = input("operator (+,-) = ")
-angka_2 = float(input("masukkan angka ke-2 = "))
-
 # percabangan
-if operator == '+':
-    hasil = angka_1 + angka_2
-    print(f"hasilnya adalah = {hasil}")
-elif operator == '_':
-    hasil = angka_1 - angka_2
-    print(f"hasilnya adalah = {hasil}")
+# menggunakan statment IF
+
+# struktur
+"""
+    1. if-nya
+    2. Ada kondisi (bernilai TRUE/FALS)
+    3. Ada Aksi -> proses lanjutan
+"""
+
+nama = input("masukkan nama anda = ")
+
+# If statement dalam bentuk inline (satu baris)
+# if nama == "azza" : print(f"selamat datang {nama}")
+# print("Terima kasih")
+
+# if statement dalam bentuk indentasi
+#if nama == 'azza' :
+ #    print(f'Selamat Datang {nama}')
+#print("Terima kasih")
+
+# IF-ELSE Statement
+if nama == 'azza':
+    # aksi 1
+    print(f'selamat datang {nama}')
 else:
-    print("tolong masukkan angka dan operator yang benar")
+    # aksi 2
+    print(f'kamu {nama}, bukan azza')
+print('terima kasih')
